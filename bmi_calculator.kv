@@ -1,0 +1,30 @@
+<BMICalculatorLayout>:
+    orientation: 'vertical'
+    spacing: '10dp'
+    padding: '10dp'
+    Label:
+        text: 'BMI Calculator'
+        font_size: '24sp'
+        color: 0.2, 0.7, 0.3, 1
+    BoxLayout:
+        orientation: 'horizontal'
+        spacing: '10dp'
+        TextInput:
+            id: height_input
+            hint_text: 'Enter your height (cm)'
+            background_color: 0.95, 0.95, 0.95, 1
+            font_size: '18sp'
+        TextInput:
+            id: weight_input
+            hint_text: 'Enter your weight (kg)'
+            background_color: 0.95, 0.95, 0.95, 1
+            font_size: '18sp'
+    Button:
+        text: 'Calculate BMI'
+        background_color: 0.3, 0.6, 0.9, 1
+        on_press: root.calculate_bmi()
+    Label:
+        id: result_label
+        text: ''
+        halign: 'center'
+        color: 0.2, 0.7, 0.3, 1
